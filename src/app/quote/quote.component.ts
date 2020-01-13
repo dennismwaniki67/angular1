@@ -10,6 +10,7 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1, 'You only live once, but if you do it right, once is enough.', 'Mae West', 0, 0, new Date(2020, 3, 14)),
     new Quote(2, 'Life is what happens to us while we are making other plans.', 'Allen Saunders', 0, 0, new Date(2020, 3, 14)),
+    new Quote(3, 'When we strive to become better than we are, everything around us becomes better too.', 'Kevin Saunders', 0, 0, new Date(2020, 3, 14)),
   ];
   toggleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -30,7 +31,7 @@ export class QuoteComponent implements OnInit {
       if (this.quotes[i].clickCounter > this.highestCounter) {
         this.highestCounter = this.quotes[i].clickCounter;
         this.dislikeCounter = this.quotes[i].dislikeCounter;
-        this.bestQuote = this.quotes[i].name;
+        this.bestQuote = this.quotes[i].description;
       }
     }
   }
