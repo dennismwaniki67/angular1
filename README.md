@@ -27,6 +27,8 @@
 ## Project's live Link
 
  - https://dennismwaniki67.github.io/angular1/
+ ## codebeatlink
+ https://codebeat.co/projects/github-com-dennismwaniki67-angular1-master
 
 ## Contact information.
  - Email: dennismwaniki67@gmail.com.
