@@ -1,5 +1,11 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="detail">
     <p><span style="font-weight: bold;">Author:</span>{{quote.name}}</p>
 <p>This quote was posted in {{quote.completeDate|dateCount}} days</p>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+<button (click)='likeQuo()' id="display" class="btn btn-outline-success">like <i class="fa fa-thumbs-up"
+    style="font-size:36px"></i></button><span id="lk">0</span>
+    <button id="dislike" class="btn btn-outline-success">Dislike <i class="fa fa-thumbs-down"
+      style="font-size:36px"></i></button><span id="dlk">0</span>
+
 </div>
