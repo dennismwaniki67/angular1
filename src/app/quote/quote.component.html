@@ -4,11 +4,37 @@
 
   <div class="row">
     <div class="col-md-6">
+      <p *ngIf='quotes.length > 0'><button (click)='findHighestVotes()' class="btn btn-outline-info">Check the
+        Best quote</button>
+</p>
+<div *ngIf='bestQuote && quotes.length > 0' appHighlightBestQuote>
+    <div>
+        <p>{{bestQuote}}</p>
+        <p>{{highestCounter}}</p>
+        <p>{{dislikeCounter}}</p>
+    </div>
+</div>
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
           <h4 id={{i}} appStrikethrough>{{quote.description}} posted on {{quote.completeDate|date|uppercase}}</h4>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Explore</button>
         </div>
+        <div class="row">
+          <div>
+              <a href="#" onclick="event.preventDefault()" (click)="countClick(quote)">
+                  <i class="fa fa-thumbs-up pr-1  ml-4 like" ng-click="count = count + 1"
+                      ng-init="count=0" style="color:blue;"></i>
+              </a>
+              <span class="m-4">{{ quote.clickCounter }}</span>
+          </div>
+          <div>
+              <a href="#" onclick="event.preventDefault()" (click)="countDislike(quote)">
+                  <i class="fa fa-thumbs-down pr-1 dislike" ng-click="count = count + 1"
+                      ng-init="count=0" style="color:red;"></i>
+              </a>
+              <span class="m-4">{{ quote.dislikeCounter }}</span>
+          </div>
+      </div>
 
         <div *ngIf='quote.showDescription'>
           <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
