@@ -19,6 +19,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     StrikethroughDirective,
     DateCountPipe,
     QuoteFormComponent
+    
   ],
   imports: [
     BrowserModule,
