@@ -1,11 +1,18 @@
 ## Project name.
 - Quotes.
+
 ## Project description.
 - The website is basically a website that one can upload quotes and he or she can like and dislike the qoute or upvote or downvote.
+
 ## Author information.
  - Dennis Mwaniki
+ 
 ## Setup instructions 
- -
+Open terminal (CTRL ALT T)
+git clone https://github.com/dennismwaniki67/angular1.git
+cd quotes-app
+use atom . or code . to open the cloned repo on Atom or Vs-code respectively
+
 ## Technology Used
  - HTML-We used html for displaying the content.
  - CSS-We used css and bootstrap for styling the front-end of the website and making the landing page.
