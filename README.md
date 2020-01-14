@@ -28,7 +28,7 @@
 
  - https://dennismwaniki67.github.io/angular1/
  ## codebeatlink
- https://codebeat.co/projects/github-com-dennismwaniki67-angular1-master
+[![codebeat badge](https://codebeat.co/badges/8803441d-b7e0-4be2-bca9-b141880b83d1)](https://codebeat.co/projects/github-com-dennismwaniki67-angular1-master)
 
 ## Contact information.
  - Email: dennismwaniki67@gmail.com.
